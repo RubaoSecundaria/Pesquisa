@@ -5,6 +5,7 @@
 {% block extra_css %}
 {% load static %}
 <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
 <style>
     .feedback-card {
         background-color: rgba(255, 255, 255, 0.1);
@@ -29,7 +30,7 @@
     }
     
     .feedback-header h3 {
-        color: #4cc9f0;
+        color:rgb(255, 255, 255);
         margin: 0;
     }
     
@@ -41,14 +42,14 @@
     .feedback-question {
         font-weight: bold;
         margin-top: 10px;
-        color: #4cc9f0;
+        color: #ffffff;
         border-bottom: 1px solid rgba(255,255,255,0.1);
         padding-bottom: 5px;
     }
     
     .feedback-answer {
         margin-bottom: 15px;
-        color: #fff;
+        color:rgb(255, 200, 248);
         padding: 5px 0;
     }
     
@@ -66,15 +67,15 @@
     }
     
     .pagination a {
-        background: linear-gradient(135deg, #4cc9f0 0%, #3a86ff 100%);
+        background: linear-gradient(135deg, #ff9ed2 0%, #882568 100%);
         color: white;
-        box-shadow: 0 4px 8px rgba(76, 201, 240, 0.3);
+        box-shadow: 0 4px 8px rgba(136, 37, 104, 0.3);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     
     .pagination a:hover {
         transform: translateY(-3px);
-        box-shadow: 0 6px 12px rgba(76, 201, 240, 0.5);
+        box-shadow: 0 6px 12px rgba(136, 37, 104, 0.5);
     }
     
     .pagination .current {
@@ -93,7 +94,7 @@
     .btn-return {
         display: inline-block;
         padding: 12px 25px;
-        background: linear-gradient(135deg, #4cc9f0 0%, #3a86ff 100%);
+        background: linear-gradient(135deg, #ff9ed2 0%, #882568 100%);
         color: white;
         border: none;
         border-radius: 8px;
@@ -103,14 +104,15 @@
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         margin-top: 20px;
         text-decoration: none;
-        box-shadow: 0 4px 15px rgba(76, 201, 240, 0.4);
+        box-shadow: 0 4px 15px rgba(136, 37, 104, 0.4);
     }
     
     .btn-return:hover {
         transform: translateY(-3px);
-        box-shadow: 0 6px 20px rgba(76, 201, 240, 0.6);
+        box-shadow: 0 6px 20px rgba(136, 37, 104, 0.6);
     }
 </style>
+
 {% endblock %}
 
 {% block content %}
@@ -188,6 +190,6 @@
 </div>
 
 <div class="footer">
-    <p>Feito com ❤️ <a class="linkedin" href="https://www.linkedin.com/in/rubens-neto-566b15242/" target="_blank">Rubens Gonçalves - Linkedin</a></p>
+    <p>Desenvolvedor: <a class="linkedin" href="https://www.linkedin.com/in/rubens-neto-566b15242/" target="_blank">Rubens Gonçalves - Linkedin</a></p>
 </div>
 {% endblock %}
