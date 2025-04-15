@@ -127,23 +127,26 @@
                     </div>
                     
                     <div class="feedback-content">
-                        <p class="feedback-question">1. Como você avalia nosso atendimento?</p>
-                        <p class="feedback-answer">{{ feedback.atendimento }}</p>
+                        <p class="feedback-question">1. Você teve dificuldade com o totem de autoatendimento?</p>
+                        <p class="feedback-answer">{{ feedback.dificuldade_totem }}</p>
                         
-                        <p class="feedback-question">2. O que você achou do nosso mix de produtos?</p>
-                        <p class="feedback-answer">{{ feedback.mix_produtos }}</p>
+                        <p class="feedback-question">2. Você recebeu oferta de ajuda da recepção ou algum outro profissional da empresa?</p>
+                        <p class="feedback-answer">{{ feedback.oferta_ajuda }}</p>
                         
-                        <p class="feedback-question">3. Você considera nosso atendimento ágil?</p>
-                        <p class="feedback-answer">{{ feedback.atendimento_agil }}</p>
+                        <p class="feedback-question">3. A empresa estava visualmente limpa e organizada?</p>
+                        <p class="feedback-answer">{{ feedback.limpeza_organizacao }}</p>
                         
-                        <p class="feedback-question">4. O que você achou dos valores dos nossos produtos?</p>
-                        <p class="feedback-answer">{{ feedback.valores_produtos }}</p>
+                        <p class="feedback-question">4. O ambiente estava climatizado e agradável?</p>
+                        <p class="feedback-answer">{{ feedback.ambiente_climatizado }}</p>
                         
-                        <p class="feedback-question">5. O prazo de entrega foi satisfatório?</p>
-                        <p class="feedback-answer">{{ feedback.prazo_entrega }}</p>
+                        <p class="feedback-question">5. Atendimento da recepção:</p>
+                        <p class="feedback-answer">{{ feedback.atendimento_recepcao }}</p>
+                        
+                        <p class="feedback-question">6. Atendimento das manicures:</p>
+                        <p class="feedback-answer">{{ feedback.atendimento_manicures }}</p>
                         
                         {% if feedback.sugestao_melhoria %}
-                            <p class="feedback-question">6. Sugestão de melhoria:</p>
+                            <p class="feedback-question">7. Sugestão de melhoria:</p>
                             <p class="feedback-answer">{{ feedback.sugestao_melhoria }}</p>
                         {% endif %}
                     </div>

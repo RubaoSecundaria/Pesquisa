@@ -2,11 +2,12 @@ from django.db import models
 
 class Feedback(models.Model):
     nome = models.CharField(max_length=100, blank=False, null=False)
-    atendimento = models.CharField(max_length=20)
-    mix_produtos = models.CharField(max_length=30)
-    atendimento_agil = models.CharField(max_length=30)
-    valores_produtos = models.CharField(max_length=30)
-    prazo_entrega = models.CharField(max_length=30)
+    dificuldade_totem = models.CharField(max_length=20)
+    oferta_ajuda = models.CharField(max_length=20)
+    limpeza_organizacao = models.CharField(max_length=20)
+    ambiente_climatizado = models.CharField(max_length=20)
+    atendimento_recepcao = models.CharField(max_length=20)
+    atendimento_manicures = models.CharField(max_length=20)
     sugestao_melhoria = models.TextField(blank=True, null=True)
     data_criacao = models.DateTimeField(auto_now_add=True)
 

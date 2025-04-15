@@ -10,21 +10,23 @@ def enviar_feedback(request):
     if request.method == 'POST':
         # Coletar dados do formulário
         nome = request.POST.get('nome')
-        atendimento = request.POST.get('atendimento')
-        mix_produtos = request.POST.get('mix_produtos')
-        atendimento_agil = request.POST.get('atendimento_agil')
-        valores_produtos = request.POST.get('valores_produtos')
-        prazo_entrega = request.POST.get('prazo_entrega')
+        dificuldade_totem = request.POST.get('dificuldade_totem')
+        oferta_ajuda = request.POST.get('oferta_ajuda')
+        limpeza_organizacao = request.POST.get('limpeza_organizacao')
+        ambiente_climatizado = request.POST.get('ambiente_climatizado')
+        atendimento_recepcao = request.POST.get('atendimento_recepcao')
+        atendimento_manicures = request.POST.get('atendimento_manicures')
         sugestao_melhoria = request.POST.get('sugestao_melhoria')
         
         # Criar novo objeto Feedback
         Feedback.objects.create(
             nome=nome,
-            atendimento=atendimento,
-            mix_produtos=mix_produtos,
-            atendimento_agil=atendimento_agil,
-            valores_produtos=valores_produtos,
-            prazo_entrega=prazo_entrega,
+            dificuldade_totem=dificuldade_totem,
+            oferta_ajuda=oferta_ajuda,
+            limpeza_organizacao=limpeza_organizacao,
+            ambiente_climatizado=ambiente_climatizado,
+            atendimento_recepcao=atendimento_recepcao,
+            atendimento_manicures=atendimento_manicures,
             sugestao_melhoria=sugestao_melhoria
         )
         
